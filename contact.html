@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Developer</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="fd/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="fd/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="fd/favicon-16x16.png">
+    <link rel="manifest" href="fd/site.webmanifest">
+    <link rel="mask-icon" href="fd/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .nav1 {
+            background-image: url('bg.webp');
+            background-size: cover;
+            background-repeat: no-repeat;
+            /* width: 100%; */
+            height: 100vh;
+            background-blend-mode: normal;
+        }
+
+        nav {
+            height: 70px;
+            width: 100%;
+            display: inline-block;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        .ul1 {
+            margin-left: 800px;
+            margin-right: 10px;
+            margin-bottom: 100%;
+        }
+
+        .ul1 li a {
+            text-decoration: none;
+            list-style-type: none;
+            color: black;
+            font-weight: bold;
+            font-size: 1em;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 0px 5px;
+            border: 2px solid rgb(237, 145, 6);
+            border-radius: 25% 10%;
+            background-color: rgb(230, 28, 44);
+
+
+        }
+
+        .ul1 li {
+            display: inline-block;
+            justify-content: space-between;
+            align-items: center;
+            /* margin-top: 5px; */
+            margin-right: 15px;
+            padding-left: 10px;
+        }
+
+        .d1 {
+            color: rgba(237, 13, 80, 0.694);
+            border: 1px disc brown;
+            background-color: yellow;
+            font-size: 2em;
+            font-size: bold;
+            font-style: italic;
+            font-family: fantasy;
+            margin-left: 20px;
+            letter-spacing: 3px;
+            width: 30%;
+            margin-top: 10px;
+        }
+
+        #sec1 {
+            margin: -100px;
+
+        }
+
+        #s1 {
+            background-color: rgba(14, 13, 13, 0.934);
+            margin-top: -35px;
+            margin-bottom: -75px;
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+            font-size: 4em;
+            font-style: oblique;
+            margin-top: 40px;
+
+        }
+
+        .skill {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 50px;
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+
+        h2 {
+            margin: auto;
+            font-size: 2em;
+            margin-bottom: 10px;
+            border: 2px solid green;
+            background-color: bisque;
+            border-radius: 10px 100px / 120px;
+            width: 50%;
+
+        }
+
+        .skill a h2 {
+            margin-top: 5%;
+        }
+
+        #css img {
+            margin-left: 100px;
+
+        }
+
+        .skill a {
+            text-decoration: none;
+            color: blue;
+        }
+
+        .skill p {
+            color: rgb(255, 0, 0);
+            text-align: center;
+            margin: 20px 0px;
+            background-color: whitesmoke;
+            border: 2px solid blue;
+            border-radius: 10px 100px / 120px;
+        }
+
+        .skill a h2:hover {
+            color: black;
+            background-color: rgb(224, 70, 9);
+            width: 50%;
+        }
+
+        .skill p:hover {
+            color: white;
+            background-color: black;
+        }
+
+        .skill img:hover {
+            background-color: brown;
+        }
+
+        .skill img:hover {
+            background-color: brown;
+        }
+
+        .skill img:hover {
+            background-color: brown;
+        }
+
+        .about {
+            background-color: rgb(201, 201, 66);
+            margin-top: -25px;
+            margin-bottom: -70px;
+        }
+
+        .about h1 {
+            color: black;
+        }
+
+        .marquee {
+            background-color: rgb(17, 224, 155);
+            font-size: 2em;
+            font-weight: bold;
+            color: rgb(26, 23, 23);
+            border: 2px solid blue;
+            width: 50%;
+            /* margin-left:50px;
+            margin-right: 50px; */
+            margin: auto;
+            margin-top: 8%;
+        }
+
+        .a1 {
+            background-color: brown;
+            width: 70%;
+            margin-left: 200px;
+            margin-right: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .a2 {
+            /* margin: auto; */
+            width: 50%;
+            margin-right: 50px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            box-shadow: 6px 6px rgba(238, 235, 42, 0.836), -1em 0 .4em rgb(16, 151, 74);
+        }
+
+        .a2 img:hover {
+            transition: all 1s ease-in-out;
+            transform: scaleY(1);
+            margin-right: 20px;
+            box-shadow: none;
+            background-color: aqua;
+        }
+
+        .p:hover {
+            color: rgb(235, 235, 242);
+            background-color: rgb(85, 86, 87);
+            border: 4px solid greenyellow;
+            transition: 1s ease-in-out;
+
+        }
+
+        .p {
+            color: blue;
+            background-color: rgb(233, 238, 245);
+            border: 4px solid greenyellow;
+            text-align: center;
+            padding: 10px;
+            margin: auto;
+            width: 300px;
+        }
+
+        h3 {
+            text-align: center;
+            margin-bottom: 4%;
+            font-size: 2em;
+            font-weight: bold;
+            font-family: cursive;
+            text-decoration: underline lime;
+        }
+
+        .cu {
+            background-color: rgb(236, 117, 117);
+            margin-top: -30px;
+            margin-bottom:-90px;
+        }
+
+        .cu1 {
+            background-color: rgb(78, 75, 75);
+            margin-top: 50px;
+            margin-bottom: -50px;
+            margin-left: 100px;
+            width: 80%;
+            height: 500px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        .c11 img {
+            margin: 20px 20px;
+
+        }
+
+        .c2 {
+            margin: auto;
+            background-color: white;
+            width: 350px;
+            height: 450px;
+            border: 3px solid green;
+            border-radius: 30px;
+        }
+
+        .f1 {
+            padding: 20px;
+            margin: auto;
+        }
+
+        .b {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .message{
+            display: flex;
+            align-items: flex-start;
+        }
+        .t{
+            margin-left: 30px;
+            margin-top: -40px;
+            padding: 5px;
+            width:50px;
+            margin-bottom:-5px;
+        }
+        forms{
+            color:rgb(245, 11, 206);
+        }
+        .b input[type=reset]{
+            background-color: rgb(117, 161, 248);
+            color:white;
+            /* margin: auto; */
+            padding:10px;
+            border:2px solid red;
+            border-radius:10px;
+            
+        }
+        .sub input[type=submit]{
+            background-color: rgb(117, 161, 248);
+            color:white;
+            /* margin: auto; */
+            padding:10px;
+            border:2px solid red;
+            border-radius:10px;
+        }
+        .sub input[type=submit]:hover{
+            background-color: brown;
+            color:white;
+        }
+        .b input[type=reset]:hover{
+            background-color: brown;
+            color:white;
+        }
+        footer{
+            height:50px;
+            background-color: brown;
+            margin-top:10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <section class="nav1">
+        <nav>
+            <div class="d1">FRONTENED&nbsp;&nbsp;&nbsp;&nbsp;<SPAN>DEVELEPOR</SPAN></div>
+            <ul class="ul1">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="skills.html">SKILLS</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+            </ul>
+
+        </nav>
+
+
+    </section> -->
+    <!-- merge section -->
+    <!-- <section>
+        <div id="sec1">
+            <center>
+                <img src="merge1.jpg" height="200px">
+            </center>
+        </div>
+    </section>
+
+    </section>
+    marquee section -->
+    <!-- <section class="marquee">
+        <marquee direction="right" scrollamount="15" color="white">Contact Us Section</marquee>
+    </section> --> 
+    <!-- CONTACT US -->
+    <section class="cu">
+        <h1 style="color:black;margin-bottom:50px;">Contact Us</h1>
+        <div class="cu1">
+            <div class="c1">
+                <div class="c11">
+                    <img src="map.jpg" width="300px" height="300px" usemap="#pin">
+                    <map name="pin">
+
+                    </map>
+                </div>
+
+            </div>
+            <div class="c2">
+                <div class="f1">
+                    <h2 STYLE="width:320px;font-size:2em;margin-top:-10px;"> SEND US MESSAGE</h2>
+                    <forms>
+                        <label>NAME<span style="color:black;">*</span>&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" max-length="20"
+                                required></label><br><br><br><br>
+                        <label>EMAIL<span style="color:black;">*</span>&nbsp;&nbsp;&nbsp;<input type="email" maxlength="25"
+                                required></label><br><br><br><br>
+                        <label>PHONE NUMBER<span style="color:black;">*</span><input type="number" max-length="10" required></label><br><br><br><br>
+                        <label>What is about?</label>
+                        <select>
+                            <!-- <label>What is about?<input type="text"></label> -->
+                            <option value="">Please Choose an option</option>
+                            <option value="HTML">HTML</option>
+                            <option value="CSS">CSS</option>
+                            <OPTION value="JAVASCRIPT">JAVASCRIPT</OPTION>
+                        </select>
+                        <br><br><br><br>
+                        <div class="message">
+                            <div class="m"> <label>MESSAGE</label></div>
+                            <div class="t"> <textarea rows="5" cols="10"></textarea></div>
+                        </div>
+                        <div CLASS="b">
+                            <a class="sub" href="submit.html"> <input type="submit" value="SUBMIT"></a>
+                            <input type="reset" value="reset">
+                      </div>
+                    </forms>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
